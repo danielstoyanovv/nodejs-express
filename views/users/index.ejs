@@ -1,0 +1,19 @@
+<%- include('../partials/header.ejs') %>
+<div class="container">
+    <h2 class="h2" >Welcome to Users page</h2>
+    <div class="row">
+        <div class="col-sm">
+            <p>Your id is: <%= id %><p>
+        </div>
+        <div class="col-sm">
+            <p>Your name is: <%= name %><p>
+        </div>
+    </div>
+    <h3 class="h3">Hobbies</h3>
+    <ul class="list-group">
+        <% hobbies.forEach(function(item) { %>
+            <li class="list-group-item"><%= item %></li>
+        <% }); %>
+    </ul>
+</div>
+<%- include('../partials/footer.ejs') %>
